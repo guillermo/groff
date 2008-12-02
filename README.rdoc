@@ -1,0 +1,58 @@
+= Groff
+
+Groff is another ruby pdf generator that doesn't reinvent the wheel.
+
+It use the always present groff command (on all macs and *nix), and ps2pdf from ghostscript package.
+
+If you load it within rails, you will get a TemplateEngine for free
+
+Some resources to get you started:
+
+* {GitHub Wiki}[http://github.com/guillermo/groff/wikis]
+* {GitHub Repo}[http://github.com/guillermo/groff]
+* {Conferencia Rails Lighting Talks}[http://isabel.dit.upm.es/component/option,com_docman/task,doc_download/gid,840/Itemid,74/] (WMV)
+
+== Installation
+
+The recommended way is that you get the gem:
+
+  # add GitHub to your local list of gem sources:
+  gem sources -a http://gems.github.com/
+  
+  # install the gem:
+  gem install guillermo-groff
+
+Just add a simple require to the end of "config/environment.rb":
+
+  gem 'guillermo-groff'
+  require 'groff'
+
+That's it. Remember to install the gem on <b>all</b> machines that you are
+deploying to.
+
+== Example usage
+
+Create a view named index.pdf.groff with these content
+
+  .AUTHOR    "<%= author = %x(who am i).split(" ").first.capitalize %>"
+  .DOCTYPE    LETTER
+  .PRINTSTYLE TYPESET
+  .START
+  .DATE
+  <%= Time.now.strftime "%A, %d %b %Y %H:%M" %>
+  .TO
+  User of Groff
+  .FROM
+  Guillermo Álvarez
+  guillermo@cientifico.net
+  .GREETING
+  Hi
+  Enjoy using groff
+  .CLOSING
+  Bye
+
+
+== Authors and credits
+
+Authors::                Guillermo Álvarez <guillermo@cientifico.net>
+Thanks::                 Willpaginate as I used as scaffold for the template engine and gem
