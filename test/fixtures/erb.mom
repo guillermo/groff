@@ -1,0 +1,33 @@
+.AUTHOR    "Guillermo Álvarez Fernández"
+.DOCTYPE    LETTER
+.PRINTSTYLE TYPESET
+.START
+.DATE
+<%= time_now.strftime "%A, %d %b %Y %H:%M" %>
+.TO
+User of Groff
+.FROM
+Guillermo Álvarez
+JobAndTalent.com
+Madrid, Madrid
+España
+.GREETING
+Querido <%= %x(hostname).strip.split(".").first %>
+.PP
+Soy consciente de que eres usuarios de la 
+máquina <%= %x(hostname).strip.split(".").first %>.
+
+Por ello, te quiero dotar de la capacidad
+de hacer documents con groff.
+
+.PP
+Espero que te sea de tu agrado y que te sea util, ¡ leñe ! y 
+que si tienes un problema me lo consultes, a ver si puedo hacer
+algo por ti.
+
+El precio es de una caña.
+
+.CLOSING
+Sinceramente tuyo.
+.PP
+Guillermo Álvarez

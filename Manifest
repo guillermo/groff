@@ -1,0 +1,14 @@
+groff.gemspec
+init.rb
+lib/document.rb
+lib/groff.rb
+lib/templates/rails_plugin.rb
+Manifest
+Rakefile
+README.rdoc
+test/fixtures/erb.mom
+test/fixtures/letter.mom
+test/fixtures/penguin.ps
+test/fixtures/sample_docs.mom
+test/fixtures/typesetting.mom
+test/test_groff.rb
