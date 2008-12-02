@@ -2,7 +2,9 @@ module Groff
   class Document
     
     # Initialize the document
-    # Document.new(roff_text, )
+    # Document.new(roff_text, options)
+    # * <b>:params</b> Is used to pass params to groof command (default is <em>-Tps -dpaper=a4l -P-pa4 -mom</em>) 
+    # * <b>:binding</b> to setup an ERB binding
     def initialize(text, options = {})
       raise ArgumentError, "Expected text to render with groff" unless text.kind_of? String
       @options = Hash.new
@@ -12,7 +14,7 @@ module Groff
       @body = text
     end
 
-    # Return a postcript
+    # Return the generated postscript
     def to_ps
       filter_erb
       filter_iconv
@@ -23,7 +25,7 @@ module Groff
       end
     end
 
-    # Return a pdf
+    # Return the generated pdf
     def to_pdf
       filter_erb
       filter_iconv
