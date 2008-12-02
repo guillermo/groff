@@ -1,6 +1,4 @@
 require 'iconv'
+require 'erb'
 require File.dirname(__FILE__)+'/document.rb'
-
-if defined?(Rails)         
-  require File.dirname(__FILE__)+'/templates/rails_plugin.rb'
-end
+require File.dirname(__FILE__)+'/templates/rails_plugin.rb' if defined?(Rails)

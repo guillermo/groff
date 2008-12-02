@@ -1,5 +1,3 @@
-require 'erb'
-
 module Groff
   class Document
     
