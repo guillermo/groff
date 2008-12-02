@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.date = %q{2008-12-02}
   s.description = %q{Groff Parser and template engine for rails}
   s.email = %q{guillermo@cientifio.net}
-  s.extra_rdoc_files = ["lib/document.rb", "lib/groff.rb", "lib/templates/rails_plugin.rb", "README.rdoc"]
-  s.files = ["groff.gemspec", "init.rb", "lib/document.rb", "lib/groff.rb", "lib/templates/rails_plugin.rb", "Manifest", "Rakefile", "README.rdoc", "test/fixtures/erb.mom", "test/fixtures/letter.mom", "test/fixtures/penguin.ps", "test/fixtures/sample_docs.mom", "test/fixtures/typesetting.mom", "test/test_groff.rb"]
+  s.extra_rdoc_files = ["CHANGELOG", "lib/document.rb", "lib/groff.rb", "lib/templates/rails_plugin.rb", "README.rdoc"]
+  s.files = ["CHANGELOG", "groff.gemspec", "init.rb", "lib/document.rb", "lib/groff.rb", "lib/templates/rails_plugin.rb", "Manifest", "Rakefile", "README.rdoc", "test/fixtures/erb.mom", "test/fixtures/letter.mom", "test/fixtures/penguin.ps", "test/fixtures/sample_docs.mom", "test/fixtures/typesetting.mom", "test/test_groff.rb"]
   s.has_rdoc = true
   s.homepage = %q{http://github.com/guillermo/groff}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Groff", "--main", "README.rdoc"]
