@@ -1,5 +1,5 @@
-module Groff
-  class Template < ActionView::TemplateHandler
+module Groff 
+  class Template < ActionView::TemplateHandler #:nodoc: all
  
     def render(template, local_assigns = {})
       #keep ie happy
@@ -21,9 +21,6 @@ module Groff
     end
   end
 end
- 
- 
- 
  
 Mime::Type.register "application/pdf", :pdf                
 Mime::Type.register "application/postscript", :ps
