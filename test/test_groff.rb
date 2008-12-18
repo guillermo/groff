@@ -45,7 +45,14 @@ module Groff
       assert_match /#{%x(hostname).strip.split(".").first}/, out
       assert_match /#{time_now.strftime "%A, %d %b %Y %H:%M"}/, out
     end
-    
+
+    def test_utf8_to_iso_translation
+      doc = Document.new(read_fixture("utf8"))
+      assert_nothing_raised do
+        doc.to_ps
+      end
+    end
+
     def time_now
       @time_now ||= Time.now
     end
