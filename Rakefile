@@ -7,6 +7,7 @@ Echoe.new('groff') do |p|
   p.url            = "http://github.com/guillermo/groff"
   p.author         = "Guillermo Álvarez"
   p.email          = "guillermo@cientifio.net"
+  p.require_signed = false
   p.ignore_pattern = ["tmp/*", "script/*"]
   p.development_dependencies = []
   p.test_files =  'test/test_groff.rb'
