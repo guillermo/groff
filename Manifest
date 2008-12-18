@@ -12,4 +12,5 @@ test/fixtures/letter.mom
 test/fixtures/penguin.ps
 test/fixtures/sample_docs.mom
 test/fixtures/typesetting.mom
+test/fixtures/utf8.mom
 test/test_groff.rb
