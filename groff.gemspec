@@ -6,7 +6,6 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["Guillermo \303\201lvarez"]
-  s.cert_chain = ["/Users/guillermo/.rubygems/gem-public_cert.pem"]
   s.date = %q{2008-12-18}
   s.description = %q{Groff Parser and template engine for rails}
   s.email = %q{guillermo@cientifio.net}
@@ -18,7 +17,6 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{groff}
   s.rubygems_version = %q{1.3.1}
-  s.signing_key = %q{/Users/guillermo/.rubygems/gem-private_key.pem}
   s.summary = %q{Groff Parser and template engine for rails}
   s.test_files = ["test/test_groff.rb"]
 
